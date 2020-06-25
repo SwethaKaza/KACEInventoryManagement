@@ -8,7 +8,7 @@ from getpass import getpass
 urllib3.disable_warnings()
 
 # URL for KACE API login
-authRequest = "https://au-oma-k1000.applieduw.com/ams/shared/api/security/login"
+authRequest = "https://yourkacedomain.com/ams/shared/api/security/login"
 
 # Get credentials
 userID = input("KACE API username: ")
@@ -40,7 +40,7 @@ csrfToken = authResponse.headers['x-dell-csrf-token']
 print(json.dumps(authResponse.json(), indent=4, sort_keys=True))
 
 # URL for dumping machine inventory from KACE
-deviceInventory = "https://au-oma-k1000.applieduw.com/api/inventory/machines"
+deviceInventory = "https://yourkacedomain.com/api/inventory/machines"
 
 # Construct request headers
 inventoryHeaders = {
