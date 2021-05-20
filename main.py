@@ -10,7 +10,7 @@ urllib3.disable_warnings()
 # URL for KACE API login
 authRequest = "https://yourkacedomain.com/ams/shared/api/security/login"
 
-# Get credentials
+# Get KACE user credentials
 userID = input("KACE API username: ")
 userPass = getpass(prompt="KACE API password: ", stream=None)
 
